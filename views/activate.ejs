@@ -1,0 +1,1344 @@
+
+<!doctype html>
+<html class="no-js" lang=""> 
+
+<head>
+       <meta charset="utf-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+       <title>Dashboard | Mega Miners </title>
+       <link rel="icon" type="image/png" href="/dash/assets/images/favicon.ico" />
+       <meta name="description" content="">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link href="https://@fonts.googleapis.com/css@family=Muli_3A300,300i,400,400i,600,600i,700,700i_7CComfortaa_3A300,400,500,700" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="/dash/assets/js/ironface.js"></script>
+
+<script src="/dash/assets/js/offline.min.js"></script>
+<script src='/dash/assets/js/qrcode/jquery.qrcode.js'></script>
+<script src='/dash/assets/js/qrcode/qrcode.js'></script>
+<script src='/dash/assets/js/Sound.js'></script>
+       <!-- ============================================
+       ================= Stylesheets ===================
+       ============================================= -->
+
+       <!-- vendor css files -->
+       <link rel="stylesheet" href="/dash/assets/css/offline-theme-dark.css" />
+<link rel="stylesheet" href="/dash/assets/css/offline-language-english.css" />
+       
+       <link rel="stylesheet" href="/dash/assets/css/vendor/bootstrap.min.css">
+       <link rel="stylesheet" href="/dash/assets/css/vendor/animate.css">
+       
+       <link rel="stylesheet" href="/dash/assets/css/fontawesome/css/all.css">
+       <link rel="stylesheet" href="/dash/assets/js/vendor/animsition/css/animsition.min.css">
+       <link rel="stylesheet" href="/dash/assets/js/vendor/daterangepicker/daterangepicker-bs3.css">
+       <link rel="stylesheet" href="/dash/assets/js/vendor/morris/morris.css">
+       <link rel="stylesheet" href="/dash/assets/js/vendor/owl-carousel/owl.carousel.css">
+       <link rel="stylesheet" href="/dash/assets/js/vendor/owl-carousel/owl.theme.css">
+       <link rel="stylesheet" href="/dash/assets/js/vendor/rickshaw/rickshaw.min.css">
+       <link rel="stylesheet" href="/dash/assets/js/vendor/datetimepicker/css/bootstrap-datetimepicker.min.css">
+       <link rel="stylesheet" href="/dash/assets/js/vendor/touchspin/jquery.bootstrap-touchspin.min.css">
+       <link rel="stylesheet" href="/dash/assets/js/vendor/datatables/css/jquery.dataTables.min.css">
+       <link rel="stylesheet" href="/dash/assets/js/vendor/datatables/datatables.bootstrap.min.css">
+       <link rel="stylesheet" href="/dash/assets/js/vendor/chosen/chosen.css">
+       <link rel="stylesheet" href="/dash/assets/js/vendor/summernote/summernote.css">
+       <link rel="stylesheet" href="/dash/assets/css/vendor/simple-line-icons.css">
+       <link rel="stylesheet" href="/dash/assets/js/vendor/datatables/css/jquery.dataTables.min.css">
+       <link rel="stylesheet" href="/dash/assets/js/vendor/datatables/datatables.bootstrap.min.css">
+       <link rel="stylesheet" href="/dash/assets/js/vendor/datatables/extensions/ColReorder/css/dataTables.colReorder.min.css">
+       <link rel="stylesheet" href="/dash/assets/js/vendor/datatables/extensions/Responsive/css/dataTables.responsive.css">
+       <link rel="stylesheet" href="/dash/assets/js/vendor/datatables/extensions/ColVis/css/dataTables.colVis.min.css">
+       <link rel="stylesheet" href="/dash/assets/js/vendor/datatables/extensions/TableTools/css/dataTables.tableTools.min.css">
+       <link rel="stylesheet" href="/dash/assets/flag-icons/css/flag-icon.min.css">
+       <!-- project main css files -->
+       <link rel="stylesheet" href="/dash/assets/css/main.css">
+       <!--/ stylesheets -->
+
+
+
+       <!-- ==========================================
+       ================= Modernizr ===================
+       =========================================== -->
+       
+       <script src="/dash/assets/js/vendor/modernizr/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+       <!--/ modernizr -->
+
+
+   </head>
+   <body id="minovate" class="appWrapper sidebar-sm-forced device-lg scheme-default default-scheme-color header-fixed aside-fixed rightbar-hidden basebar-hidden sidebar-sm" style="background-image: url(/dash/assets/images/map_blue.png);
+       background-size: contain;
+       background-repeat: no-repeat;
+       background-position: center;
+       background-attachment: fixed;background-image: linear-gradient(#171c2a 20%, #2d3950 70%)">
+      <!-- ====================================================
+       ================= Application Content ===================
+       ===================================================== -->
+       <div id="wrap" class="animsition" style="animation-duration: 1500ms; opacity: 1;">
+
+
+
+           <!-- ===============================================
+           ================= HEADER Content ===================
+           ================================================ -->
+           <section id="header">
+
+
+               <header class="clearfix hidden-xs">
+
+
+                   <!-- Branding -->
+                   <div class="branding scheme-default">
+                       <img src="../images/blockstream.png" height="40px" width="155px" style="margin-top: 5px; float: left;">
+         
+                     
+                       <a role="button" tabindex="0" class="offcanvas-toggle visible-xs-inline"><i class="fa fa-bars"></i></a>
+                   </div>
+                   <!-- Branding end -->
+                   <!-- Right-side navigation -->
+                   
+                      
+                   
+                       <ul class="nav-right pull-right list-inline">
+           
+                       <li class="dropdown nav-profile hidden-xs">
+
+                           
+
+                           <ul class="dropdown-menu animated littleFadeInRight lead" role="menu">
+
+                               <li>
+                                   <a href="#">
+                                    <label id="usdbal" style="float: left;" class="checkbox checkbox-custom-alt checkbox-custom-md">
+                                        <input name="customRadioAlt" type="radio"><i></i>                               </label>
+                                   
+                                   </a>
+                               </li>
+                               <li>
+                                   <a href="#">
+                                   <label id="btcbal" style="float: left;" class="checkbox checkbox-custom-alt checkbox-custom-md">
+                                       <input name="customRadioAlt" type="radio">                                    </label>
+                                   </a>
+                               </li>
+                         
+
+                           </ul>
+
+                       </li>
+                      
+                   
+                       <li class="dropdown notifications hidden-xs ">
+                          <a href="deposit.php" role="button" class="btn btn-success btn-rounded-10 lead" style="margin-top: 3px"><i class="fas fa-donate"></i> <strong>Deposit</strong></a>
+                       </li>
+
+
+                       <li class="toggle-right-sidebar">
+                           <a role="button" tabindex="0">
+                               <i class="glyphicon glyphicon-user"></i>
+                           </a>
+                       </li>
+                  
+   
+                  
+                   </ul>
+                   <!-- Right-side navigation end -->
+
+                   <!-- Right-side navigation end -->
+
+
+
+               </header>
+
+   <!--mobile-->
+
+<header class="clearfix hidden-lg hidden-md hidden-sm">
+
+                   <!-- Branding -->
+                   <div class="branding scheme-default">
+                       <img src="../images/blockstream.png" height="37px" width="auto" style="margin-top: 5px;">
+       
+                       <a role="button" tabindex="0" class="offcanvas-toggle visible-xs-inline"><i class="fa fa-bars"></i></a>
+                   </div>
+                   <!-- Branding end -->
+
+
+
+                   <!-- Left-side navigation -->
+              
+                      
+
+                   
+                       <ul class="nav-right  list-unstyled list-inline" style="
+       padding-left: 10%;
+">
+                       
+                                   
+<li class="dropdown nav-profile hidden-md hidden-lg hidden-sm" style="padding: 0;">
+
+                           
+
+                           <ul class="dropdown-menu animated littleFadeInRight lead" role="menu">
+
+                               <li>
+                                   <a href="#">
+                                    <label id="usdbal" style="float: left;" class="checkbox checkbox-custom-alt checkbox-custom-md">
+                                        <input name="customRadioAlt" checked="true" type="radio"><i></i>                              </label>
+                                   
+                                   </a>
+                               </li>
+                               <li>
+                                   <a href="#">
+                                   <label id="btcbal" style="float: left;" class="checkbox checkbox-custom-alt checkbox-custom-md">
+                                       <input name="customRadioAlt" type="radio"><i></i>                                </label>
+                                   </a>
+                               </li>
+                         
+
+                           </ul>
+
+                       </li>
+                      
+                      
+
+                   
+                       <li class="dropdown notifications hidden-sm hidden-lg hidden-md " style="
+       padding: 0;
+       margin-bottom: 5px;
+">
+                          <a href="deposit.php" role="button" class="btn btn-success btn-rounded-10 lead" style="margin-top: 3px"><i class="fas fa-donate"></i> <strong>Deposit</strong></a>
+                       </li>
+                          
+
+       
+                   </ul>
+                   <!-- Left-side navigation end -->
+
+
+
+
+
+
+                   <!-- Right-side navigation -->
+                   <ul class="nav-left pull-left list-inline">
+           
+                       <li class="dropdown nav-profile hidden-xs">
+
+                           <a href="default.htm" class="dropdown-toggle " data-toggle="dropdown" style="color:#f07000 !important " aria-expanded="false">
+                                Live Account
+                               <span class="lead"><i class="fas fa-dollar-sign"></i> <strong>0.00</strong> <i class="fas fa-sort-down"></i></span>
+                           </a>
+
+                           <ul class="dropdown-menu animated littleFadeInRight lead" role="menu">
+
+                               <li>
+                                   <a href="#">
+                                    <label style="float: left;" class="checkbox checkbox-custom-alt checkbox-custom-md">
+                                        <input name="customRadioAlt" checked="true" type="radio"><i></i>Demo: $12,000.00                                     </label>
+                                   
+                                   </a>
+                               </li>
+                               <li>
+                                   <a href="#">
+                                   <label style="float: left;" class="checkbox checkbox-custom-alt checkbox-custom-md">
+                                       <input name="customRadioAlt" type="radio"><i></i>Live: $0.00                                    </label>
+                                   </a>
+                               </li>
+                         
+
+                           </ul>
+
+                       </li>
+                      
+                   
+                       <li class="dropdown notifications hidden-xs ">
+                          <button class="btn btn-success btn-rounded-10 lead" style="margin-top: 7px"><i class="fas fa-donate"></i> <strong>Deposit</strong></button>
+                       </li>
+
+
+                       <li class="toggle-right-sidebar">
+                           <a role="button" tabindex="0">
+                               <i class="glyphicon glyphicon-user"></i>
+                           </a>
+                       </li>
+                  
+
+                   </ul>
+                   <!-- Right-side navigation end -->
+
+
+
+               </header>
+           </section>
+           <!--/ HEADER Content  -->
+
+
+
+
+           <!-- =================================================
+           ================= CONTROLS Content ===================
+           ================================================== -->
+                        <div id="controls">
+
+
+
+
+
+               <!-- ================================================
+               ================= SIDEBAR Content ===================
+               ================================================= -->
+               <aside id="sidebar">
+
+
+                   <div id="sidebar-wrap">
+
+                       <div class="panel-group slim-scroll" role="tablist">
+                           <div class="panel panel-default">
+                               <div class="panel-heading" role="tab">
+                                   <h4 class="panel-title">
+                                       <a data-toggle="collapse" href="#sidebarNav">
+                                           Navigation <i class="fa fa-angle-up"></i>
+                                       </a>
+                                   </h4>
+                               </div>
+                               <div id="sidebarNav" class="panel-collapse collapse in" role="tabpanel">
+                                   <div class="panel-body">
+
+
+                                       <!-- ===================================================
+                                       ================= NAVIGATION Content ===================
+                                       ==================================================== -->
+                                       <ul id="navigation" style="margin-top: 10px">
+                                        <li>
+                                            <a href="/dashboard" role="button" data-container="body" data-toggle="popover" data-placement="right" data-content="Live Position" data-trigger="hover" tabindex="0" data-original-title="" title=""><i class="fas fa-poll"></i> <span>Live Trade</span></a>
+                                        </li>
+                                        
+                                            
+                                        <li>
+                                            <a href="/deposit" role="button" data-container="body" data-toggle="popover" data-placement="right" data-content="Deposit" data-trigger="hover" tabindex="0" data-original-title="" title=""><i class="fas fa-money-check-alt"></i><span>Deposit</span></a>
+                                           
+                                        </li>
+                                        <li>
+                                            <a href="/history" role="button" data-container="body" data-toggle="popover" data-placement="right" data-content="Trade History" data-trigger="hover" tabindex="0" data-original-title="" title=""><i class="fas fa-list"></i> <span>Trade History</span></a>
+                                      
+                                        </li>  
+                                        <li>
+                                            <a href="/withdrawal" role="button" data-container="body" data-toggle="popover" data-placement="right" data-content="Withdraw" data-trigger="hover" tabindex="0" data-original-title="" title=""><i class="fas fa-wallet"></i> <span>Withdraw</span></a>
+                                        </li>
+                                       
+                                        
+                                        <li>
+                                            <a href="/account" role="button" data-container="body" data-toggle="popover" data-placement="right" data-content="Account" data-trigger="hover" tabindex="0" data-original-title="" title=""><i class="fas fa-user-tie"></i> <span>Accounts</span></a>
+                                      
+                                        </li>       
+                                        <li>
+                                            <a href="mailto:support@expertminingtrade.com" role="button" data-container="body" data-toggle="popover" data-placement="right" data-content="Support" data-trigger="hover" tabindex="0" data-original-title="" title=""><i class="fas fa-headset"></i> <span>Support</span></a>
+                                          
+                                          
+                                        </li>
+                                        <li>
+                                            <a href="/verify" role="button" data-container="body" data-toggle="popover" data-placement="right" data-content="Verification" data-trigger="hover" tabindex="0" data-original-title="" title=""><i class="fas fa-vote-yea"></i> <span>Verification</span> <span class="label label-success">new</span></a>
+                                            
+                                        </li>
+                                      
+                                
+                                        <li>
+                                            <a href="/logout" role="button" tabindex="0"><i class="fa fa-power-off"></i> <span>Logout</span></a>
+                                            
+                                        </li>
+                                       
+                                    </ul>
+                                       <!--/ NAVIGATION Content -->
+
+
+                                   </div>
+                               </div>
+                           </div>
+                        </div>
+
+                   </div>
+
+
+               </aside>
+               <!--/ SIDEBAR Content -->
+
+
+
+
+
+               <!-- =================================================
+               ================= RIGHTBAR Content ===================
+               ================================================== -->
+               <aside id="rightbar">
+
+                   <div role="tabpanel">
+
+                       <!-- Nav tabs -->
+                       <ul class="nav nav-tabs" role="tablist">
+                      
+                           <li role="presentation" class="active"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab"><i class="fa fa-cog"></i></a></li>
+                       </ul>
+
+                       <!-- Tab panes -->
+                       <div class="tab-content">
+                         
+                             
+                           <div role="tabpanel" class="tab-pane active" id="settings">
+                               <h6><strong>User</strong> Settings</h6>
+                             
+               
+                           
+                               <ul class="settings">
+
+                                   <li>
+                                       <div class="form-group">
+                                           <a href="/account" class="col-xs-8 control-label">Profile</a>
+                                       </div>
+                                   </li>
+
+                                   <li>
+                                       <div class="form-group">
+                                           <a href="/verify" class="col-xs-8 control-label">Account Verification</a>
+                                       </div>
+                                   </li>
+
+                                   <li>
+                                       <div class="form-group">
+                                           <a class="col-xs-8 control-label">My IP Address</a>
+                                       </div>
+                                   </li>
+
+                             
+                                   <li>
+                                       <div class="form-group">
+                                           <a href="/logout" class="col-xs-8 control-label">Logout</a>
+                                       </div>
+                                   </li>
+
+
+
+                               </ul>
+                           </div>
+                       </div>
+
+                   </div>
+
+               </aside>
+               <!--/ RIGHTBAR Content -->
+
+
+
+
+           </div>
+           <!--/ CONTROLS Content -->
+           <!-- WhatsHelp.io widget -->
+<script type="text/javascript">
+(function () {
+var options = {
+whatsapp: "‬", // WhatsApp number
+call_to_action: "Chat With Us", // Call to action
+position: "left", // Position may be 'right' or 'left'
+};
+var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+})();
+</script>
+<!-- /WhatsHelp.io widget --> 
+
+
+
+           <!-- ====================================================
+           ================= CONTENT ===============================
+           ===================================================== -->
+           <section id="content">
+
+               <div class="page page-ui-tiles" style="background-image: url(/dash/assets/images/map_blue.png);
+       background-size: contain;
+       background-repeat: no-repeat;
+       background-position: center;
+       background-attachment: fixed;">
+                   
+
+<input type="hidden" id="hlive" value="0"> 
+<input type="hidden"  id="hstake" value="0"> 
+<input type="hidden"  id="hemail" value="john@gmail.com"> 
+<input type="hidden"  id="hstart" value="0"> 
+<input type="hidden"  id="hchance" value="2"> 
+<input type="hidden"  id="hbalance" value="90"> 
+<input type="hidden"  id="htarget" value="0"> 
+<input type="hidden"  id="hsignals" value="90"> 
+<input type="hidden"  id="hmainte" value="99"> 
+<input type="hidden"  id="hwallet" value="3LEjG2YhFcagNBtUxokRSHnEADCyxXQKAj"> 
+<input type="hidden"  id="hpassword" value="johndoe123"> 
+<input type="hidden"  id="hswith" value="0"> 
+<input type="hidden"  id="hcomm" value=""> 
+<input type="hidden"  id="hcommpercent" value=""> 
+
+<div class="row">
+                                      
+
+    <!-- col -->
+    <div  class="card-container col-lg-2 col-sm-4 col-xs-6 ">
+       <div class="card">
+           <div class="front bg-slategray" style="border-bottom: 2px solid #f07000 !important;">
+    
+               <!-- row   xbal -->
+               <!-- row   xbal -->
+               <div class="row">
+                   <!-- col -->
+                   <div class="col-xs-3" style="margin-right: .5em;">
+                    <%= req.user.currency %>
+                   </div>
+                   <!-- /col -->
+                   <!-- col -->
+                   <div class="col-xs-6">
+                       <p id="" class="text-lg text-strong mb-0 xeffect"><%= comma(req.user.total_deposit) %></p>
+                      
+                       <span>Deposits</span>
+                   </div>
+                   <!-- /col -->
+               </div>
+               <!-- /row -->
+    
+           </div>
+           <div class="back bg-slategray-inverse">
+    
+               <!-- row -->
+               <div class="row">
+                   <!-- col -->
+                   <div class="col-xs-5">
+                       <a href="/deposit"><i class="icon-credit-card fa-2x"></i> Deposit</a>
+                   </div>
+                   <!-- /col -->
+                   <!-- col -->
+                   <div class="col-xs-5">
+                       <a href="/withdrawal"><i class="fa fa-suitcase fa-2x"></i> Withdraw</a>
+                   </div>
+                   <!-- /col -->
+               
+               </div>
+               <!-- /row -->
+    
+           </div>
+       </div>
+    </div>
+    <!-- /col -->
+    <!-- col -->
+     <div class="card-container col-lg-2 col-sm-4 col-xs-6">
+       <div class="card">
+           <div class="front bg-slategray" style=" border-bottom: 2px solid rgba(210, 229, 240, 0.79);">
+    
+               <!-- row -->
+               <div class="row">
+                   <!-- col -->
+                   <div class="col-xs-3">
+                    <i class="fas fa-piggy-bank fa-2x" style="color: green;"></i>
+                   </div>
+                   <!-- /col -->
+                   <!-- col -->
+                   <div class="col-xs-8">
+                       <p id="" class="text-lg text-strong mb-0 xeffect"><%= comma(req.user.total_earned) %></p>
+                       <span>Earnings</span>
+                   </div>
+                   <!-- /col -->
+               </div>
+               <!-- /row -->
+    
+           </div>
+           <div class="back bg-slategray-inverse-other" style="border-bottom: 2px solid green;">
+    
+               <!-- row -->
+               <div class="row">
+                   <!-- col -->
+                   <div class="col-xs-5">
+                       <a><i class="fas fa-piggy-bank fa-2x"></i></a>
+                   </div>
+                   <!-- /col -->
+                   <!-- col -->
+                   <div class="col-xs-6">
+                       <a> <p id="" class="text-lg text-strong mb-0 xeffect"><%= comma(req.user.total_earned) %></p>
+                       <span>Earnings</span></a>
+                   </div>
+                   <!-- /col -->
+                  
+               </div>
+               <!-- /row -->
+    
+           </div>
+       </div>
+    </div>
+    <!-- /col -->
+    
+     <!-- col -->
+     <div class="card-container col-lg-2 col-sm-4 col-xs-6">
+       <div class="card">
+           <div class="front bg-slategray" style="border-bottom: 2px solid rgba(210, 229, 240, 0.79);">
+    
+               <!-- row -->
+               <div class="row">
+                   <!-- col -->
+                   <div class="col-xs-3" style="margin-right: .5em;">
+                    <%= req.user.currency %>
+                   </div>
+                   <!-- /col -->
+                   <!-- col -->
+                   <div class="col-xs-8">
+                       <p id="balance" class="text-lg text-strong mb-0 xeffect"><%= comma(req.user.balance) %></p>
+                       <span>Balance</span>
+                   </div>
+                   <!-- /col -->
+               </div>
+               <!-- /row -->
+    
+           </div>
+           <div class="back bg-slategray-inverse-other" style="border-bottom: 2px solid green;">
+    
+                <!-- row -->
+               <div class="row">
+                   <!-- col -->
+                   <div class="col-xs-4">
+                       <a><i class="fas fa-check-circle fa-2x"></i></a>
+                   </div>
+                   <!-- /col -->
+                   <!-- col -->
+                   <div class="col-xs-6">
+                       <a> <p id="balance" class="text-lg text-strong mb-0 xeffect"><%= comma(req.user.balance) %></p>
+                       <span>Balance</span></a>
+                   </div>
+                   <!-- /col -->
+                  
+               </div>
+               <!-- /row -->
+           </div>
+       </div>
+    </div>
+    <!-- /col -->                         <!-- col -->
+                           <div class="card-container col-lg-2 col-sm-4 col-xs-6">
+                               <div class="card">
+                                   <div class="front bg-slategray" style="border-bottom: 2px solid rgba(210, 229, 240, 0.79);">
+    
+                                       <!-- row -->
+                                       <div class="row">
+                                           <!-- col -->
+                                           <div class="col-xs-3" style="margin-right: .5em;">
+                                            <%= req.user.currency %>
+                                           </div>
+                                           <!-- /col -->
+                                           <!-- col -->
+                                           <div class="col-xs-8">
+                                               <p id="" class="text-lg text-strong mb-0 xeffect"><%= comma(req.user.total_withdraw) %></p>
+                                               <span>Withdrawn</span>
+                                           </div>
+                                           <!-- /col -->
+                                       </div>
+                                       <!-- /row -->
+    
+                                   </div>
+                                   <div class="back bg-slategray-inverse-other">
+    
+                                             <!-- row -->
+                                       <div class="row">
+                                           <!-- col -->
+                                           <div class="col-xs-3" style="margin-right: .5em;">
+                                            <%= req.user.currency %>
+                                           </div>
+                                           <!-- /col -->
+                                           <!-- col -->
+                                           <div class="col-xs-6">
+                                               <a> <p id="" class="text-lg text-strong mb-0 xeffect"><%= comma(req.user.total_withdraw) %></p>
+                                               <span>withdrawn</span></a>
+                                           </div>
+                                           <!-- /col -->
+                                          
+                                       </div>
+                                       <!-- /row -->
+    
+                                   </div>
+                               </div>
+                           </div>
+                           <!-- /col -->
+    
+                            <!-- col -->
+                           <div class="card-container col-lg-2 col-sm-4 col-xs-6">
+                               <div class="card">
+                                   <div class="front bg-slategray" style="border-bottom: 2px solid rgba(210, 229, 240, 0.79);">
+    
+                                       <!-- row -->
+                                       <div class="row">
+                                           <!-- col -->
+                                           <div class="col-xs-4">
+                                            <i class="fas fa-check-circle fa-3x" style="color: green;"></i>
+                                           </div>
+                                           <!-- /col -->
+                                           <!-- col -->
+                                           <div class="col-xs-8">
+                                               <p id="won" class="text-lg text-strong mb-0 xeffect"><%= comma(req.user.account_type) %></p>
+                                               <span>Plan</span>
+                                           </div>
+                                           <!-- /col -->
+                                       </div>
+                                       <!-- /row -->
+    
+                                   </div>
+                                   <div class="back bg-slategray-inverse-other" style="border-bottom: 2px solid green;">
+    
+                                        <!-- row -->
+                                       <div class="row">
+                                           <!-- col -->
+                                           <div class="col-xs-6">
+                                               <a><i class="fas fa-check-circle fa-3x"></i></a>
+                                           </div>
+                                           <!-- /col -->
+                                           <!-- col -->
+                                           <div class="col-xs-6">
+                                               <a>   <p id="won" class="text-lg text-strong mb-0 xeffect"><%= comma(req.user.account_type) %></p>
+                                               <span>Plan</span></a>
+                                           </div>
+                                           <!-- /col -->
+                                          
+                                       </div>
+                                       <!-- /row -->
+                                   </div>
+                               </div>
+                           </div>
+                           <!-- /col -->
+    
+                           <!-- col -->
+                           <div class="card-container col-lg-2 col-sm-4 col-xs-6">
+                               <div class="card">
+                                   <div class="front bg-slategray" style="        border-bottom: 2px solid rgba(210, 229, 240, 0.79);">
+    
+                                       <!-- row -->
+                                       <div class="row">
+                                           <!-- col -->
+                                           <div class="col-xs-3">
+                                            <i class="fas fa-check-circle fa-2x"></i>
+                                           </div>
+                                           <!-- /col -->
+                                           <!-- col -->
+                                           <div class="col-xs-8">
+                                               <p id="loss" class="text-lg text-strong mb-0 xeffect"><%= comma(req.user.account_status) %></p>
+                                               <span>Status</span>
+                                           </div>
+                                           <!-- /col -->
+                                       </div>
+                                       <!-- /row -->
+    
+                                   </div>
+                                   <div class="back bg-slategray-inverse-other" style="border-bottom: 2px solid red;">
+    
+                                       <!-- row -->
+                                       <div class="row">
+                                           <!-- col -->
+                                           <div class="col-xs-3">
+                                               <a><i class="fas fa-check-circle fa-2x"></i></a>
+                                           </div>
+                                           <!-- /col -->
+                                           <!-- col -->
+                                           <div class="col-xs-6">
+                                               <a> <p id="loss" class="text-lg text-strong mb-0 xeffect"><%= comma(req.user.account_status) %></p>
+                                               <span>Status</span></a>
+                                           </div>
+                                           <!-- /col -->
+                                          
+                                       </div>
+                                       <!-- /row -->
+    
+                                   </div>
+                               </div>
+                           </div>
+                           <!-- /col -->
+    
+                       </div>
+                   <!-- /row -->                    <!-- /row -->  <!-- row -->
+                   <div class="row">
+
+
+
+                       <center><!-- col -->
+                       <div class="col-md-8">
+                           <!-- tile -->
+                           <section class="tile bg-slategray">
+
+                   
+<!-- tile header -->             
+                               
+                                   
+                               <div class="row" id="bankmod">
+                                       <!-- col -->
+                                       <div class="col-md-12 col-sm-12">
+                                           <div class="media mb-20">
+                                               <div class="pull-left thumb">
+                                                   
+                                               </div>
+                                               <div class="media-body">
+                                                   <h4 class="media-heading mb-0"> <strong>WITHDRAWAL VERIFICATION</strong></h4>
+                                                   <small class="text-success">Before make withdrawal, you are to retrieve your    withdrawal pin from our admin, and input    your    withdrawal pin here                      </small>
+                                               </div>
+                                           </div>
+                       
+                                       </div>
+                                       <!-- /col -->
+                                       <!-- col -->
+                                       <div class="col-md-12 col-sm-12">
+                                       <form action="" method="POST" >
+                							<%- include("./partials/messages") %>
+                                           <div class="col-md-8 col-sm-12">
+                                       <div class="form-group">
+                                            <input class="form-control mb-10"  type="text" name="pin" placeholder="Enter Withdrawal Pin">
+                                       </div>  
+                                       </div>
+                                       <div class="col-md-4 col-sm-12">
+                                        <button class="btn btn-success btn-ef btn-ef-3 btn-rounded-20 btn-ef-3c mb-10" name="pin" >Confirm<i class="fa fa-arrow-right"></i></button>
+                                        </div>
+                                    
+
+                                       </div>
+                                       <!-- /col -->
+                                       </form>   
+                                   </div> 
+                                   
+                  
+                               <!-- /tile body -->
+
+                           </section>
+                           <!-- /tile -->
+                       </div>
+                                          
+                   
+
+
+
+                   </center></div>
+                   </div>
+   
+                   
+                   <!-- /row -->
+
+</section></div>
+
+
+               
+           
+           
+                                          
+                                       
+
+                                       
+                                       <!-- /col -->
+                                   
+                                   <!-- /row -->
+
+                               
+                               <!-- /tile widget -->
+
+
+                           
+                           <!-- /tile -->
+                       
+                       <!-- /col -->
+
+
+
+
+
+
+                   
+
+                   
+                   <!-- /row -->
+
+
+      
+
+
+
+
+               
+           
+
+          
+
+
+
+
+
+      
+
+<!--/ CONTENT -->
+                 <!-- =================================================
+               ================= RIGHTBAR Content ===================
+               ================================================== -->
+               <aside id="basebar">
+
+                   <div role="tabpanel">
+
+                          <ul class="nav nav-tabs" role="tablist">
+                           <li role="presentation" class="active"><a href="history.php#billingm" aria-controls="trades" role="tab" data-toggle="tab"><i class="fas fa-message"></i><span class="badge bg-warning unread">1</span></a></li>
+                           <li role="presentation"><a href="history.php#tradeing" aria-controls="history" role="tab" data-toggle="tab"><i class="fas fa-check-square"></i></a></li>
+                           
+                          
+                       </ul>
+
+                       <!-- Tab panes -->
+                       <div class="tab-content">
+                         
+
+                       <div role="tabpanel" class="tab-pane active" id="billingm">
+                               <h6><strong class="text-capitalize"> </strong></h6>
+
+                               <ul>
+
+                                  
+
+                                   <li class="online">
+                                       <div class="media">
+                                        
+                                      <div class="media-body text-capitalize">
+                                                                                  </div>
+                                       </div>
+                                   </li>
+
+
+                              
+                               </ul>
+                           </div>
+
+
+                          <div role="tabpanel" class="tab-pane " id="tradeing">
+                               <h6><strong>Trade Account</strong> Manifest</h6>
+                                          <ul>
+
+                                   <li class="online">
+                                       <div class="media">
+                                          
+                                           <div class="media-body">
+                                               <div class="col-md-2 col-sm-2 col-xs-2">  <span class="media-heading">SIGNAL-STRENGHT</span>
+                                                       <small><i class="fas fa-flag text-success"></i> </small>
+                                               </div>
+                                <div class="col-md-10 col-sm-10 col-xs-10"> 
+                                     <div class="" style="margin-top: 15px;background: #b3b3b3;height: 3px;width: 100%">
+                                       <div class="" role="progressbar" aria-valuemin="0" aria-valuemax="100" id="signals" style="background: #5cb85c;width: 90%;height: 100%;"></div>
+                                       </div> 
+                                               <span id="signalbit" class="badge status badge-success"> 90$</span>
+                               </div>
+                                           </div>
+                                       </div>
+                                   </li>
+                           
+
+                           <li class="online">
+                                       <div class="media">
+                                          
+                                           <div class="media-body">
+                                               <div class="col-md-2 col-xs-2 col-sm-2">  <span class="media-heading">MAINTENANCE GUAGE</span>
+                                                       <small><i class="fas fa-flag text-success"></i> </small>
+                                               </div>
+                                <div class="col-md-10 col-xs-10 col-sm-10"> 
+                                <div class="" style="margin-top: 15px;background: #b3b3b3;height: 3px;width: 100%">
+                                       <div class="" role="progressbar" aria-valuemin="0" aria-valuemax="100" id="mainte" style="background: #5cb85c;width: 99%;height: 100%;"></div>
+                                       </div> 
+                                               <span id="mainbit" class="badge status badge-success"> 99$</span>
+                               </div>
+                                              
+                               </div>
+                                           </div>
+                                       </li></ul></div>
+                              
+                              
+
+                            
+                        </div>
+
+
+
+
+
+                         
+
+                         
+                       </div>
+
+                   
+
+               </aside>
+               <!--/ RIGHTBAR Content -->
+
+
+
+
+
+
+
+
+
+<div id="baller">
+
+</div>
+
+
+
+
+
+
+       
+
+       <script>
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+ // Get todays date and time
+var today = new Date();
+ var day = today.getDay();
+  var flu = today.getDate();
+ var n = today.getMonth();
+ var daylist = ["SUN","MON","TUE","WED ","THUR","FRI","SAT"];
+var monthlist = ["JAN","FEB","MAR","APRIL","MAY","JUNE","JULY","AUG","SEMPT","OCT","NOV","DEC"];
+ var hour ="0"+ today.getHours();
+ var minute ="0"+ today.getMinutes();
+ var second ="0"+ today.getSeconds();
+ var prepand = (hour >= 12)? " PM ":" AM ";
+ hour = (hour >= 12)? hour - 12: hour;
+ if (hour===0 && prepand===' PM ') 
+ { 
+ if (minute===0 && second===0)
+ { 
+ hour=12;
+ prepand=' Noon';
+ } 
+ else
+ { 
+ hour=12;
+ prepand=' PM';
+ } 
+ } 
+ if (hour===0 && prepand===' AM ') 
+ { 
+ if (minute===0 && second===0)
+ { 
+ hour=12;
+ prepand=' Midnight';
+ } 
+ else
+ { 
+ hour=12;
+ prepand=' AM';
+ } 
+ } 
+
+function dateOrdinal(day) {
+   return day+(31==day||21==day||1==day?"st":22==day||2==day?"nd":23==day||3==day?"rd":"th")
+};
+
+
+
+document.getElementById("flipper").innerHTML = daylist[day] +' '+ dateOrdinal(flu) +' '+ monthlist[n] +' '+ hour +':'+ minute.substr(-2) +':'+ second.substr(-2) + ' ('+prepand+')';
+ }
+, 1000);
+
+
+
+</script>
+       <!--/ Application Content -->
+       <!--/ MODAL FOR DEPOSITS/ -->
+
+
+
+
+
+
+
+
+
+<section>
+   <div class="pageheader" style="bottom: 0;position: fixed;z-index: 23;right: 0;left: 0;margin-bottom: 0;">
+
+                    
+                       <div class="page-bar">
+
+                           <ul class="page-breadcrumb">
+                              
+                              <li class="dropdown messages">
+                          <a href="index.php" class="dropdown-toggle" data-toggle="dropdown">
+                           <strong>Auto-Trade: </strong> <strong class="text-success">Active <i class="fas fa-check"></i></strong>                            </a>
+                           <a href="history.php" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                           <strong> </strong><strong class="text-orange">$</strong> 
+                           </a>
+                            <a role="button" tabindex="0" class="toggle-base-sidebar" style="float: right;">
+                               <i class="fas fa-ellipsis-h"></i>
+                               <span class="badge bg-warning unread">0</span>
+                           </a>
+                       </li>
+
+                               
+                            <li class="dropdown messages">
+
+                                <a class="sidebar-collapse toggle-base-sidebar">
+                           <span class="flag-icon flag-icon-us"></span>
+                           </a>
+                          <a href="history.php#" class="dropdown-toggle text-uppercase toggle-base-sidebar" data-toggle="dropdown">
+                          Current time:<strong id="flipper">MON 17th MAY 8:02:02 ( PM )</strong>
+                           </a>
+
+                           
+
+                       </li>
+                        
+                   
+                  
+                           </ul>
+
+                          
+
+                       </div>
+
+                   </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ============================================
+       ============== Vendor JavaScripts ===============
+       ============================================= -->
+      
+        
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+       <script>window.jQuery || document.write('<script src="/dash/assets/js/vendor/jquery/jquery-1.11.2.min.js"><\/script>')</script>
+       <script src="/dash/assets/js/vendor/bootstrap/bootstrap.min.js"></script>
+
+       <script src="/dash/assets/js/vendor/jRespond/jRespond.min.js"></script>
+
+       <script src="/dash/assets/js/vendor/d3/d3.min.js"></script>
+       <script src="/dash/assets/js/vendor/d3/d3.layout.min.js"></script>
+
+       <script src="/dash/assets/js/vendor/rickshaw/rickshaw.min.js"></script>
+
+       <script src="/dash/assets/js/vendor/sparkline/jquery.sparkline.min.js"></script>
+
+       <script src="/dash/assets/js/vendor/slimscroll/jquery.slimscroll.min.js"></script>
+
+       <script src="/dash/assets/js/vendor/animsition/js/jquery.animsition.min.js"></script>
+
+       <script src="/dash/assets/js/vendor/daterangepicker/moment.min.js"></script>
+       <script src="/dash/assets/js/vendor/daterangepicker/daterangepicker.js"></script>
+
+       <script src="/dash/assets/js/vendor/screenfull/screenfull.min.js"></script>
+       <script src="/dash/assets/js/vendor/touchspin/jquery.bootstrap-touchspin.min.js"></script>
+
+       <script src="/dash/assets/js/vendor/flot/jquery.flot.min.js"></script>
+       <script src="/dash/assets/js/vendor/flot-tooltip/jquery.flot.tooltip.min.js"></script>
+       <script src="/dash/assets/js/vendor/flot-spline/jquery.flot.spline.min.js"></script>
+
+       <script src="/dash/assets/js/vendor/easypiechart/jquery.easypiechart.min.js"></script>
+
+       <script src="/dash/assets/js/vendor/raphael/raphael-min.js"></script>
+       <script src="/dash/assets/js/vendor/morris/morris.min.js"></script>
+
+       <script src="/dash/assets/js/vendor/owl-carousel/owl.carousel.min.js"></script>
+
+       <script src="/dash/assets/js/vendor/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+
+       
+
+       <script src="/dash/assets/js/vendor/chosen/chosen.jquery.min.js"></script>
+               <script src="/dash/assets/js/vendor/filestyle/bootstrap-filestyle.min.js"></script>
+
+       <script src="/dash/assets/js/vendor/summernote/summernote.min.js"></script>
+
+       <script src="/dash/assets/js/vendor/coolclock/coolclock.js"></script>
+       <script src="/dash/assets/js/vendor/coolclock/excanvas.js"></script>
+
+     
+             <script src="https://@cdn.jsdelivr.net/npm/jquery.fancytable/dist/fancyTable.min.js"></script>
+             <script src="https://@cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+             <script type="text/javascript" src="pay/qrcode.js"></script>
+       <!--/ vendor javascripts -->
+<script type="text/javascript">
+       $(document).ready(function() {
+           $("#project-progress").fancyTable({
+               
+               pagination: true,
+               perPage:10,
+               globalSearch:true,
+               inputStyle: 'color:black',
+               sortable: false,
+               paginationClass: "btn btn-info"
+           });     
+       });
+   </script>
+
+<script type="text/javascript">
+           $(document).ready(function(){
+            var address="";
+            var amount="";
+            var datetime="";
+            var currency="";
+            var distance="";
+            
+                 //  
+               
+              //  document.getElementById("tools").click();
+                $("#g").click(function(){
+                    alert(" Auto Copy Trading robot is currently activated on your account, please contact support@ICoptionTrade.com for manual trade action.")
+                });
+               
+               
+         //   $('#splash').modal();
+
+                   }); 
+</script>
+
+
+
+
+
+<script>
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <!-- ============================================
+       ============== Custom JavaScripts ===============
+       ============================================= -->
+       <script src="/dash/assets/js/main.js"></script>
+       <!--/ custom javascripts -->
+
+
+
+
+
+      
+
+
+
+
+
+       
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+ // Get todays date and time
+var today = new Date();
+ var day = today.getDay();
+  var flu = today.getDate();
+ var n = today.getMonth();
+ var daylist = ["SUN","MON","TUE","WED ","THUR","FRI","SAT"];
+var monthlist = ["JAN","FEB","MAR","APRIL","MAY","JUNE","JULY","AUG","SEMPT","OCT","NOV","DEC"];
+ var hour ="0"+ today.getHours();
+ var minute ="0"+ today.getMinutes();
+ var second ="0"+ today.getSeconds();
+ var prepand = (hour >= 12)? " PM ":" AM ";
+ hour = (hour >= 12)? hour - 12: hour;
+ if (hour===0 && prepand===' PM ') 
+ { 
+ if (minute===0 && second===0)
+ { 
+ hour=12;
+ prepand=' Noon';
+ } 
+ else
+ { 
+ hour=12;
+ prepand=' PM';
+ } 
+ } 
+ if (hour===0 && prepand===' AM ') 
+ { 
+ if (minute===0 && second===0)
+ { 
+ hour=12;
+ prepand=' Midnight';
+ } 
+ else
+ { 
+ hour=12;
+ prepand=' AM';
+ } 
+ } 
+
+function dateOrdinal(day) {
+   return day+(31==day||21==day||1==day?"st":22==day||2==day?"nd":23==day||3==day?"rd":"th")
+};
+
+
+
+document.getElementById("flipper").innerHTML = daylist[day] +' '+ dateOrdinal(flu) +' '+ monthlist[n] +' '+ hour +':'+ minute.substr(-2) +':'+ second.substr(-2) + ' ('+prepand+')';
+ }
+, 1000);
+
+
+
+</script>
+       <!--/ Application Content -->
+
+
+<!--Start of Tawk.to Script
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5f770887f0e7167d00159985/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+<script src="./history_files/hbfggsjbivrne0ywjjtevguwmwo7laog.js.download" async=""></script>    
+
+<div class="offline-ui offline-ui-up"><div class="offline-ui-content"></div><a href="history.php" class="offline-ui-retry"></a></div><div class="betternet-wrapper"></div></div></body></html>
